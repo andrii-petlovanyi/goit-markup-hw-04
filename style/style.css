@@ -376,7 +376,8 @@ body {
 
 /* ---- Our customer ---- */
 .customer-container {
-  padding: 94px 215px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .customer-title {
@@ -391,14 +392,15 @@ body {
 .customer-icons {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 30px;
+  margin-left: auto;
+  margin-right: auto;
   color: var(--icon-color);
 }
 
 .customer-icons .item {
   display: flex;
-  padding: 16px 32px;
+  padding: 15px 31px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
