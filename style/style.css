@@ -256,7 +256,11 @@ body {
 }
 
 .features-list .card-img {
-  padding: 25px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
   margin-bottom: 30px;
   background-color: var(--accent-block-color);
   border-radius: 4px;
@@ -340,7 +344,7 @@ body {
 .main-team .social-links {
   display: flex;
   justify-content: center;
-  gap: 10px; 
+  gap: 10px;
   margin-top: 16px;
   color: var(--icon-color);
 }
@@ -398,9 +402,12 @@ body {
   color: var(--icon-color);
 }
 
-.customer-icons .item {
+.customer-icons .item-link {
   display: flex;
-  padding: 15px 31px;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
@@ -409,7 +416,8 @@ body {
   fill: currentColor;
 }
 
-.customer-icons .item:hover {
+.customer-icons .item-link:hover,
+.customer-icons .item-link:focus {
   border: 1px solid var(--accent-text-color);
   color: var(--accent-text-color);
   cursor: pointer;
@@ -447,14 +455,16 @@ body {
 
 .footer-links .social-link {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  padding: 12px;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
 .footer-links .social-link:hover,
-.footer-links .social-link:hover {
-  cursor: pointer;
+.footer-links .social-link:focus {
   background-color: var(--accent-text-color);
 }
 
